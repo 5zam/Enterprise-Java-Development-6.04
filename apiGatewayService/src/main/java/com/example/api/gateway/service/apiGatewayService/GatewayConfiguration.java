@@ -13,17 +13,17 @@ public class GatewayConfiguration {
         return builder.routes()
 
                 // Movie info Service
-                .route(p -> p.path("/api/students/**")
+                .route(p -> p.path("/students/**")
                         .uri("lb://STUDENT-INFO-SERVICE"))
 
                 // Rating data Service
-                .route(p -> p.path("/api/grades**")
+                .route(p -> p.path("/grades**")
                         .uri("lb://GRADES-DATA-SERVICE"))
-                .route(p -> p.path("/api/courses/**")
+                .route(p -> p.path("/courses/**")
                         .uri("lb://GRADES-DATA-SERVICE"))
 
                 // Movie catalog Service
-                .route(p -> p.path("/api/catalogs/**")
+                .route(p -> p.path("/catalogs/**")
                         .uri("lb://STUDENT-CATALOG-SERVICE"))
 
                 .build();

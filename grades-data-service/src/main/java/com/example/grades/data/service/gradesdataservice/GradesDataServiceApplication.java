@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Bean;
 import java.util.ArrayList;
 
 @SpringBootApplication
-
+@EnableEurekaClient
 public class GradesDataServiceApplication {
 
 	public static void main(String[] args) {
